@@ -6,9 +6,9 @@ from flask import render_template
 @app.route('/index')
 def index():
     data = {
-        'name': 'Timur',
-        'age': 34,
-        'title': 'Main page'
+        'name': 'Amir',
+        'age': 20,
+        'title': 'Am1rai'
     }
     html = render_template('shop/index.html', **data)
     return html
@@ -17,3 +17,7 @@ def index():
 @app.route('/login')
 def login():
     return render_template('user/login.html', title='Login')
+
+@app.route('/korz')
+def korz():
+    return render_template('prof/korz.html', title='Korzina')

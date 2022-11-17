@@ -2,3 +2,5 @@
 mysql/database
 mysql/files
 mysql/logs
+__pycache__
+log
